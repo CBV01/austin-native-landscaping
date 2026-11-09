@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Native Landscaping | Texas Native Plant Experts</title>
+    <meta name="description" content="Transform your Texas landscape with sustainable, native plant designs. 4.8★ rated landscaping services for homeowners and properties.">
+    <meta property="og:title" content="Austin Native Landscaping | Texas Native Plant Experts">
+    <meta property="og:description" content="Transform your Texas landscape with sustainable, native plant designs. 4.8★ rated landscaping services for homeowners and properties.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://austinnativelandscaping.com/wp-content/uploads/2022/07/anl_logo_2501.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Texas Native Plant Specialists — Book Your Free Consultation Today</p>
+    </div>
+
+    <header class="sticky-header">
+        <div class="header-container">
+            <a href="#" class="logo"><img src="https://austinnativelandscaping.com/wp-content/uploads/2022/07/cropped-cropped-site-icon-512px-180x180.png" alt="Austin Native Landscaping"></a>
+            <nav class="desktop-nav">
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:+15127055397" class="phone-link">+1 (512) 705-5397</a>
+                <button class="cta-button" onclick="openBookingModal()">Book Consultation</button>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://austinnativelandscaping.com/wp-content/uploads/2022/07/anl_logo_2501.png" alt="Lush native Texas landscaping">
+        </div>
+        <div class="hero-content">
+            <h1>Transform Your Texas Landscape with Native Expertise</h1>
+            <p>Sustainable, drought-resistant designs that thrive in our climate</p>
+            <div class="hero-cta">
+                <button class="primary-cta" onclick="openBookingModal()">Book Your Free Consultation</button>
+                <button class="secondary-cta" onclick="scrollToSection('services')">View Our Services</button>
+            </div>
+            <div class="trust-signals">
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.8 from 117 reviews</span>
+                </div>
+                <div class="trust-badge">Trusted by Texas homeowners since 2015</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Comprehensive Landscaping Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Landscape Design</h3>
+                    <p>Custom designs that enhance curb appeal and functionality using native plants.</p>
+                    <div class="price-cue">From $500 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Landscape Design')">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Lawn Maintenance</h3>
+                    <p>Regular care to keep lawns healthy, green, and well-manicured throughout the year.</p>
+                    <div class="price-cue">From $50 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Lawn Maintenance')">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌳</div>
+                    <h3>Tree Trimming</h3>
+                    <p>Safe and professional trimming to maintain tree health and safety.</p>
+                    <div class="price-cue">From $150 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Tree Trimming')">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Irrigation Systems</h3>
+                    <p>Efficient watering solutions to conserve water and ensure optimal plant health.</p>
+                    <div class="price-cue">From $800 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Irrigation Systems')">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧱</div>
+                    <h3>Hardscaping</h3>
+                    <p>Durable and attractive patios, walkways, and retaining walls to extend outdoor living space.</p>
+                    <div class="price-cue">From $2000 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Hardscaping')">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍂</div>
+                    <h3>Seasonal Cleanup</h3>
+                    <p>Thorough cleanup services to prepare properties for changing seasons and maintain tidiness.</p>
+                    <div class="price-cue">From $100 — enquire</div>
+                    <button class="service-cta" onclick="selectService('Seasonal Cleanup')">Book Service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="why-us-section">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <h2>Why Texas Homeowners Choose Us</h2>
+                    <ul>
+                        <li>Native plant specialists with deep Texas expertise</li>
+                        <li>4.8★ from 117 verified customer reviews</li>
+                        <li>Transparent pricing with no hidden fees</li>
+                        <li>Comprehensive service range from design to maintenance</li>
+                    </ul>
+                </div>
+                <div class="why-us-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Texas Landscapes Transformed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Years of Local Expertise</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Texas Landscape Transformations</h2>
+            <div class="masonry-grid">
+                <div class="gallery-item">
+                    <img src="https://austinnativelandscaping.com/wp-content/uploads/2022/07/Horn-After4.jpg" alt="Native Texas landscape design">
+                    <div class="gallery-caption">Drought-resistant front yard design featuring native Texas plants</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://austinnativelandscaping.com/wp-content/uploads/2022/08/Tim5.jpg" alt="Professional hardscaping project">
+                    <div class="gallery-caption">Custom patio and walkway installation with native stone</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://austinnativelandscaping.com/wp-content/uploads/2022/07/After4.jpg" alt="Sustainable irrigation system">
+                    <div class="gallery-caption">Water-efficient irrigation system for native plant beds</div>
+                </div>
+            </div>
+            <button class="gallery-cta" onclick="scrollToSection('gallery')">View Full Portfolio</button>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Austin Native Landscaping transformed our backyard into a sustainable oasis. Their knowledge of native plants saved us water and maintenance costs while creating a beautiful space we enjoy every day."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-details">
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-location">Austin, TX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Professional, punctual, and incredibly knowledgeable. The team designed a landscape that thrives in our Texas climate and requires minimal upkeep. Highly recommend their services!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-details">
+                            <div class="author-name">Michael Rodriguez</div>
+                            <div class="author-location">Round Rock, TX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We've used Austin Native Landscaping for both design and maintenance. Their attention to detail and commitment to sustainable practices sets them apart. Our property has never looked better."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-details">
+                            <div class="author-name">Jennifer Williams</div>
+                            <div class="author-location">Cedar Park, TX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="testimonials-cta" onclick="scrollToSection('testimonials')">Read More Reviews</button>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <details>
+                    <summary>Why should I choose native plants for my Texas landscape?</summary>
+                    <p>Native plants are naturally adapted to our Texas climate, requiring less water, fertilizer, and maintenance. They support local ecosystems, attract pollinators, and create landscapes that thrive in our unique weather conditions.</p>
+                </details>
+                <details>
+                    <summary>How often should I schedule landscape maintenance?</summary>
+                    <p>Most Texas properties benefit from monthly maintenance during growing season and quarterly check-ups year-round. We'll create a customized schedule based on your specific landscape needs and plant types.</p>
+                </details>
+                <details>
+                    <summary>Do you offer sustainable watering solutions?</summary>
+                    <p>Yes, we specialize in water-efficient irrigation systems and drought-resistant plant selections. Our designs typically reduce water usage by 30-50% compared to traditional landscapes while maintaining beauty and health.</p>
+                </details>
+                <details>
+                    <summary>What's included in your free consultation?</summary>
+                    <p>Our consultation includes a property assessment, discussion of your goals, preliminary design ideas, and a transparent estimate. There's no obligation - it's an opportunity to explore how we can transform your outdoor space.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="cta-banner">
+        <div class="container">
+            <h2>Ready to Transform Your Outdoor Space?</h2>
+            <p>Get a free consultation with our native plant experts</p>
+            <button class="cta-button-large" onclick="openBookingModal()">Schedule Your Consultation</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><strong>Phone:</strong> <a href="tel:+15127055397">+1 (512) 705-5397</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hello@austinnativelandscaping.com">hello@austinnativelandscaping.com</a></p>
+                    <p><strong>Service Area:</strong> Greater Austin Metro Area</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Austin Native Landscaping. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()" aria-label="Close booking modal">×</button>
+            <h2>Schedule Your Free Consultation</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="custName">Full Name *</label>
+                    <input type="text" id="custName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="custEmail">Email Address *</label>
+                    <input type="email" id="custEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="custPhone">Phone Number *</label>
+                    <input type="tel" id="custPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="custAddress">Property Address *</label>
+                    <input type="text" id="custAddress" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="custService">Service Interest *</label>
+                    <select id="custService" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Landscape Design">Landscape Design</option>
+                        <option value="Lawn Maintenance">Lawn Maintenance</option>
+                        <option value="Tree Trimming">Tree Trimming</option>
+                        <option value="Irrigation Systems">Irrigation Systems</option>
+                        <option value="Hardscaping">Hardscaping</option>
+                        <option value="Seasonal Cleanup">Seasonal Cleanup</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="custDescription">Project Description</label>
+                    <textarea id="custDescription" name="description" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method *</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="contactMethod" value="phone" required> Phone
+                        </label>
+                        <label>
+                            <input type="radio" name="contactMethod" value="email" required> Email
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Schedule Free Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast-popup" id="toastPopup">
+        <p id="toastMessage"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
